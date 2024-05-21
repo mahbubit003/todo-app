@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Daily Tasks</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="title-header">
+        <div class="title-header__title">My Daily Activity Tracker</div>
+        <div class="title-header__username">Md Mahabub Alam</div>
+        <div class="title-header__date" id="title-date"></div>
+      </header>
+
+      <div class="card">
+        <div class="card__header">
+          <div class="card__header--blank"></div>
+          <div class="card__header--title">Current Activities</div>
+        </div>
+        <div class="card__property-section" id="card__property-section">
+          <div class="card__add-task" id="card__add_task">
+            <div class="task">
+              <input
+                type="text"
+                placeholder="Write your task here"
+                name="task-input"
+                id="task-input"
+              />
+            </div>
+            <button class="card__add-button" id="add-button" onclick="addTask()">Add</button>
+          </div>
+          <div class="card__functions" id="card__functions">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="index.js"></script>
+</html>
